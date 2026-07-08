@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-# Arch install bootstrap — hosted at foo.mydomain.com
+# Arch install bootstrap — hosted at df.coko7.fr/archinstall.sh
 # Usage from the Arch live ISO:
-#   bash <(curl -sL foo.mydomain.com)
+#   bash <(curl -sL df.coko7.fr/archinstall.sh)
 set -euo pipefail
 
 CONFIG_URL="https://raw.githubusercontent.com/coko7/archy-factory/main/archinstall/user_configuration.json"
