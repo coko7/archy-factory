@@ -36,8 +36,11 @@ fi
 
 if virsh --connect "$LIBVIRT_URI" dominfo "$VM_NAME" >/dev/null 2>&1; then
   echo "ERROR: A VM named '$VM_NAME' already exists." >&2
-  echo "Remove it with:  virsh --connect $LIBVIRT_URI undefine $VM_NAME --nvram --remove-all-storage" >&2
-  exit 1
+  if ! gum confirm "Do you want to remove it now?"; then
+    echo "Remove it with:  virsh --connect $LIBVIRT_URI undefine $VM_NAME --nvram --remove-all-storage" >&2
+    exit 1
+  fi
+  virsh --connect $LIBVIRT_URI undefine $VM_NAME --nvram --remove-all-storage
 fi
 
 # Make sure the default network is running. `net-list --name` prints only
