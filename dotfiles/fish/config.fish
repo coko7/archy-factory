@@ -13,4 +13,4 @@ if status is-interactive
 end
 
 source ~/.config/fish/abbreviations/common.fish
-# source ~/.config/fish/abbreviations/git.fish
+source ~/.config/fish/abbreviations/git.fish
