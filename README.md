@@ -1,6 +1,6 @@
 # 🏗️ archy-factory
 
-Automated Arch Linux install factory — spin up VMs and bootstrap unattended archinstall setups via a one-line curl script.
+My own automated Arch Linux install factory, to spin up VMs and bootstrap `archinstall` with a few bash scripts.
 
 ## Usage
 
