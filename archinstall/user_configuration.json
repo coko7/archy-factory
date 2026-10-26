@@ -171,6 +171,7 @@
   "packages": [
     "alacritty",
     "atuin",
+    "base-devel",
     "bat",
     "btop",
     "chezmoi",
@@ -193,6 +194,7 @@
     "gping",
     "helix",
     "jq",
+    "jwt-cli",
     "lazydocker",
     "lazygit",
     "man-db",
